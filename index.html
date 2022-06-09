@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="hero">
+    <img src="https://images.pexels.com/photos/1697912/pexels-photo-1697912.jpeg?cs=srgb&dl=pexels-javon-swaby-1697912.jpg&fm=jpg" alt="">
+    <i id="flowerClose" class="fa-solid fa-xmark"></i>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pin-generator half-width">
+                    <input id="pin-input" class="form-control" type="text">
+                    <button class="generate-btn">Generate Pin</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="input-section half-width">
+                    <input id="dial-pad" class="form-control" type="text">
+                    <div class="numbers">
+                        <div class="calc-body">
+                            <div class="calc-button-row">
+                              <div class="button">7</div>
+                              <div class="button">8</div>
+                              <div class="button">9</div>
+                            </div>
+                            <div class="calc-button-row">
+                              <div class="button">4</div>
+                              <div class="button">5</div>
+                              <div class="button">6</div>
+                            </div>
+                            <div class="calc-button-row">
+                              <div class="button">1</div>
+                              <div class="button">2</div>
+                              <div class="button">3</div>
+                            </div>
+                            <div class="calc-button-row">
+                                <div class="button">&lt;</div>
+                                <div class="button">0</div>
+                                <div class="button">C</div>
+                            </div>
+                            <div>
+                                <button type="submit" class="submit-btn">Submit</button>
+                                <p class="action-left">3 try left</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notify-section">
+            <p id="wrongKEy" class="notify"> <i class="fa-solid fa-xmark icon1"></i>  Pin Didn't Match, Please try again</p>
+            <p id="rightKey" class="notify"><i class="fa-solid fa-check icon2"></i> Pin Matched! Click : And Secret door is opening for you</p>
+        </div>
+    </div>
+
+
+
+  <footer>
+   <a href="https://www.facebook.com/abdurrahim.abdurrahim.71653318" target="blank">   <h5 class="text-center text-success mt-4" > Contact With Devloper (ABR)</h5></a>
+  </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
